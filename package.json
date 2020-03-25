@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prettier": "prettier --ignore-path .gitignore --ext .js.ts .",
+    "prettier": "prettier --ignore-path .gitignore --ext .js.ts . \"**/*.+(ts|html|md|css|scss|json)\"",
     "format": "npm run prettier -- --write",
     "format-check": "npm run prettier -- --list-different",
     "validate": "npm-run-all format-check lint test build"
