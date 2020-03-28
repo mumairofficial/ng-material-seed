@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { CoreModule } from '@app-core/core.module';
 
@@ -7,7 +8,7 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [CoreModule, AppRoutingModule],
+  imports: [CoreModule, CommonModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
